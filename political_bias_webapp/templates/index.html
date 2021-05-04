@@ -1,0 +1,32 @@
+<html>
+        <style>
+                .main {
+                        text-align: -webkit-center;
+                        font-family: Arial, Helvetica, sans-serif;
+                        background: #e4e6eb;
+                }
+
+                h1 {
+                        border: solid 0.2rem black;
+                        border-radius: 0.5rem;
+                        width: 50%;
+                        background: white;
+
+                }
+
+        </style>
+        
+        <body class="main">
+                <h1> Media Bias Detection</h1>
+                <form method="POST" action="/predict">
+                        <h3>Please enter a url:</h3>
+                                <input name="url" type="text" id="inputName"placeholder="url" required autofocus>
+                                <button type="submit">Submit</button>
+                </form>
+                <div> {{ bert }} </div>
+                <div> {{ roberta }} </div>
+                <div> {{ distilbert }} </div>
+                <div> {{ svm }} </div>
+        </body>
+</html>
+        
